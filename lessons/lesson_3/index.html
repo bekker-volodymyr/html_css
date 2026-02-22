@@ -5,10 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заняття 3 - Основи стилізації</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+
+    <style>
+        /* li::marker {
+            color:brown;
+            content: "🐱‍👤";
+        } */
+
+        p::before {
+            content: '😎'
+        }
+
+        h1::after {
+            content: "👀";
+        }
+
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            /* list-style-image: url("icons/checklist.png"); */
+        }
+
+        ol {
+            list-style-type: upper-latin;
+        }
+
+        .nested-list {
+            list-style-type: disc;
+        }
+
+        .nested-list ul {
+            list-style-type: square;
+            color: rgb(97, 111, 106);
+        }
+
+        div {
+            background-color: brown;
+            /* padding-left: 10px;
+            padding-bottom: 25px;
+            padding-right: 40px;
+            padding-top: 8px; */
+            /* top -> right -> bottom -> left */
+            /* padding: 10px 25px 50px 10px; */
+            /* top -> left and right -> bottom */
+            /* padding: 10px 30px 5px; */
+            /* top and bottom -> left and right */
+            /* padding: 20px 35px; */
+            margin: 30px 10px 45px;
+            padding: 40px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem numquam quae cum excepturi harum quod hic
+        aperiam tenetur fuga commodi perferendis necessitatibus aliquid tempora ipsa adipisci, quisquam atque neque in
+        ad. Maiores, reprehenderit sapiente repellat nostrum nobis facere voluptatibus sit omnis iusto incidunt
+        obcaecati animi eaque perferendis, debitis, expedita veniam!</div>
+
+
+    <ul class="nested-list">
+        <li>Програмування
+            <ul>
+                <li>Frontend (HTML, CSS, JS)</li>
+                <li>Backend (C#, Java, Python)</li>
+            </ul>
+        </li>
+        <li>Дизайн</li>
+    </ul>
+
+
+    <ul>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est placeat nisi veritatis excepturi laudantium,
+            ipsum tempora explicabo mollitia asperiores cumque.</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>Відкрити редактор</li>
+        <li>Написати код</li>
+        <li>Закрити редактор</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Мова опису структури веб-сторінки</dd>
+        <dt>IDE</dt>
+        <dd>Інтегроване середовище розробки</dd>
+    </dl>
+
+
     <div>
         &lt;div&gt;
         &amp;
