@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .float-example {
+            width: 100px;
+            height: 100px;
+            border: solid black 3px;
+            background-color: cadetblue;
+            margin-right: 5px;
+
+
+            float: left;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius: 15px;
+            margin: auto;
+        }
+
+        .article {
+            border: solid black 2px;
+            margin: 5px;
+            padding:5px;
+        }
+
+        .float-clear {
+            /* clear: both; */
+            overflow: auto;
+        }
+
+        .clearfix::before {
+            content: "";
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="article float-clear">
+        <div class="float-example">
+            <img src="../../shared_resources/emoji.png" alt="emoji">
+        </div>
+
+        <!--lorem150-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit vitae blanditiis enim pariatur qui
+            eligendi.
+        </p>
+    </div>
+
+    <!-- <hr style="clear:both"> -->
+
+    <div class="article float-clear clearfix">
+        <div class="float-example">
+            <img src="../../shared_resources/emoji.png" alt="emoji">
+        </div>
+
+        <!--lorem150-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit vitae blanditiis enim pariatur qui
+            eligendi, autem fuga, maxime modi alias excepturi amet, ex hic soluta ab cumque quod in dolores veritatis
+            molestias tempore dolorum distinctio! Illo hic cum reprehenderit, sapiente quod nobis vel a dicta rem
+            voluptas
+            fugiat ratione voluptates excepturi inventore autem debitis harum et voluptatum incidunt explicabo
+            accusantium
+            doloribus facere temporibus. Voluptate debitis fugiat architecto odit amet culpa atque repellendus
+            consectetur
+            rerum eaque ipsum fugit eveniet pariatur qui, nulla et adipisci sunt, delectus ab ipsam cupiditate
+            voluptatum
+            est id blanditiis. Dolor veritatis, magni sint quisquam dignissimos aliquam obcaecati doloribus veniam nihil
+            cumque? Nesciunt saepe dicta, minus labore harum vitae nostrum architecto velit, corporis nulla tenetur eius
+            id,
+            laboriosam maiores delectus deleniti veritatis. Sunt soluta officia quas facilis quia suscipit neque eveniet
+            voluptatem nemo cumque praesentium exercitationem ipsam consequatur voluptates deleniti eos fugiat, qui a
+            laudantium minus consectetur.
+        </p>
+    </div>
+
+</body>
+
+</html>
